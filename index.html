@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>THIS WEBSITE CAN FIX YOUR PROBLEM</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      text-align: center;
+      margin-top: 6cm;
+    }
+    button {
+      background-color: blue;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>THIS WEBSITE CAN FIX YOUR PROBLEM</h1>
+  <p style="margin-top: 6cm;">Write your problem:</p>
+  <input type="text" id="problemInput" style="margin-top: 1cm;">
+  <button id="submitBtn">Submit</button>
+
+  <script>
+    document.getElementById('submitBtn').addEventListener('click', function() {
+      var problem = document.getElementById('problemInput').value;
+      // You can perform any necessary operations with the problem input here
+      // For example, send it to a server for processing
+      // After processing, you can redirect the user to the second page
+      window.location.href = 'secondPage.html';
+    });
+  </script>
+</body>
+</html>
